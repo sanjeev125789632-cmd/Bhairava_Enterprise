@@ -91,9 +91,24 @@ h1, h2, h3, h4, h5, h6 {
    page shrinks it with utilities like `text-xs py-2`. */
 .btn-primary,
 .btn-secondary,
-.btn-outline {
+.btn-outline,
+.btn-whatsapp {
   min-height: 2.75rem;
   text-align: center;
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
 .btn-primary {
@@ -146,6 +161,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Hover effects are gated to real pointers — on touch devices a tapped
    element keeps its :hover state until the next tap elsewhere. */
 @media (hover: hover) and (pointer: fine) {
+  .btn-whatsapp:hover {
+    background-color: #20bd5a;
+    color: #FFFFFF;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  }
+
   .btn-primary:hover {
     background-color: var(--color-orange-hover);
     transform: translateY(-1px);

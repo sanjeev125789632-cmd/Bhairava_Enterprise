@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1046">
+  <title>About Us | Bhairava Enterprises - Industrial Engineering Bangalore</title>
+  <meta name="description" content="Learn about Bhairava Enterprises vision, mission, and core industrial strengths in hydraulic systems, electrical automation, and pipeline execution in Bangalore.">
+  <meta name="keywords" content="About Bhairava Enterprises, Industrial Capabilities Bangalore, Hydraulic Engineering Company, Quality Supply, Testing Commissioning Bangalore">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Bhairava Enterprises",
+    "description": "Engineering capabilities and processes structured to match the best standards of Quality, Reliability and Punctuality.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bhairava Enterprises",
+      "telephone": ["+918553660577", "+917022191704"],
+      "email": "info@bhairavaent.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "#95, 6th Cross, Sri Vinayakanagara, Thigalarpalya",
+        "addressLocality": "Bangalore",
+        "postalCode": "560058"
+      }
+    }
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-700 flex flex-col min-h-screen">
+
+  <!-- STICKY HEADER -->
+  <header class="header-sticky fixed top-0 left-0 w-full z-40 bg-white/95 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="logo-link flex items-center gap-3 group" aria-label="Bhairava Enterprises Home">
+        <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="site-logo transition-transform group-hover:scale-105">
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="hydraulics.html" class="nav-link">Hydraulics</a>
+        <a href="electrical.html" class="nav-link">Electrical</a>
+        <a href="pipeline.html" class="nav-link">Pipe Line</a>
+        <a href="trading.html" class="nav-link">Trading Items</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:8553660577" class="hidden md:inline-flex btn-primary text-sm py-2.5 px-4" aria-label="Call Bhairava Enterprises">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Call: 8553660577
+        </a>
+
+        <a href="tel:8553660577" class="header-call-btn md:hidden p-2 text-[#E8531F] border border-[#E8531F]/30 rounded-lg hover:bg-[#E8531F]/10" aria-label="Tap to call">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </a>
+
+        <button id="mobileMenuBtn" type="button" class="md:hidden p-2 text-slate-700 hover:text-[#0B1046] focus:outline-none" aria-label="Open navigation menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div id="mobileNavOverlay" class="fixed inset-0 bg-black/60 z-40 hidden transition-opacity" aria-hidden="true"></div>
+  <div id="mobileNavDrawer" class="mobile-drawer fixed top-0 right-0 w-4/5 max-w-xs h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between p-6" aria-hidden="true" aria-label="Mobile navigation">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-200">
+        <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="site-logo">
+        <button id="mobileMenuCloseBtn" type="button" class="p-2 text-slate-500 hover:text-slate-900" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-4 mt-6">
+        <a href="index.html" class="nav-link text-lg">Home</a>
+        <a href="about.html" class="nav-link text-lg active">About</a>
+        <a href="hydraulics.html" class="nav-link text-lg">Hydraulics</a>
+        <a href="electrical.html" class="nav-link text-lg">Electrical</a>
+        <a href="pipeline.html" class="nav-link text-lg">Pipe Line</a>
+        <a href="trading.html" class="nav-link text-lg">Trading Items</a>
+        <a href="contact.html" class="nav-link text-lg">Contact</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-slate-200">
+      <a href="tel:8553660577" class="btn-primary w-full text-center py-3">
+        Call 8553660577
+      </a>
+    </div>
+  </div>
+
+  <main class="flex-grow pt-20">
+    
+    <!-- PAGE BREADCRUMB HEADER -->
+    <section class="bg-gradient-to-r from-[#0B1046] to-[#141B66] text-white py-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="breadcrumb flex items-center gap-2 text-xs text-[#E8531F] font-bold uppercase tracking-wider mb-2" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:underline text-slate-300">Home</a>
+          <span>/</span>
+          <span>About Us</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">About Bhairava Enterprises</h1>
+        <p class="text-slate-300 text-base mt-2 max-w-2xl">
+          Industrial materials, hydraulic component trading & service, electrical automation service, and hydraulic design.
+        </p>
+      </div>
+    </section>
+
+    <!-- POSITIONING & OVERVIEW -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="badge-orange mb-3">Our Core Promise</span>
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0B1046] mb-6 leading-tight">
+            "Engineering capabilities and processes structured to match the best standards of Quality, Reliability and Punctuality."
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
+            Bhairava Enterprises operates at the intersection of heavy industrial machinery maintenance, hydraulic power pack manufacturing, electrical panel service, and high-pressure pipeline engineering. Located in Thigalarpalya, Bangalore, we serve manufacturing units, hydraulic machinery OEMs, tipper body builders, and process plants with spec-driven reliability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR STRENGTHS SECTION -->
+    <section class="py-16 bg-slate-50 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="badge-navy mb-2">Why Partner With Us</span>
+          <h2 class="text-3xl font-extrabold text-[#0B1046]">Our Key Industrial Strengths</h2>
+          <p class="text-slate-600 text-sm mt-2">Structured execution workflow ensuring peak performance and zero downtime for client machinery.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          
+          <!-- Strength 1 -->
+          <div class="card-industrial p-6 text-center bg-white flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <h3 class="font-bold text-[#0B1046] text-base mb-2">Effective Management</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">Experienced managerial supervision overseeing project timelines and technical execution.</p>
+          </div>
+
+          <!-- Strength 2 -->
+          <div class="card-industrial p-6 text-center bg-white flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            </div>
+            <h3 class="font-bold text-[#0B1046] text-base mb-2">Efficient Survey</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">Detailed on-site technical inspection, pressure mapping, and dimensional verification.</p>
+          </div>
+
+          <!-- Strength 3 -->
+          <div class="card-industrial p-6 text-center bg-white flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h3 class="font-bold text-[#0B1046] text-base mb-2">Execution Capability</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">Robust hands-on fabrication, tube bending, panel wiring, and machinery retrofits.</p>
+          </div>
+
+          <!-- Strength 4 -->
+          <div class="card-industrial p-6 text-center bg-white flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <h3 class="font-bold text-[#0B1046] text-base mb-2">Quality Supply</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">Sourcing and supplying certified hydraulic components, seamless tubes, and electrical spares.</p>
+          </div>
+
+          <!-- Strength 5 -->
+          <div class="card-industrial p-6 text-center bg-white flex flex-col items-center">
+            <div class="w-14 h-14 rounded-full bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="font-bold text-[#0B1046] text-base mb-2">Testing & Commissioning</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">Comprehensive pressure hold tests, electrical safety checks, and live site commissioning.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION & MISSION BLOCKS -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Vision Box -->
+          <div class="bg-gradient-to-br from-[#0B1046] to-[#141B66] text-white p-8 lg:p-10 rounded-2xl shadow-xl border border-[#0B1046]">
+            <div class="w-12 h-12 rounded-lg bg-[#E8531F] text-white flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Our Vision</h3>
+            <p class="text-slate-200 text-base leading-relaxed">
+              Exceed customer expectations with superior quality and timely delivery across every power pack assembly, control panel panelization, and pipeline site we execute.
+            </p>
+          </div>
+
+          <!-- Mission Box -->
+          <div class="bg-slate-900 text-white p-8 lg:p-10 rounded-2xl shadow-xl border border-slate-800">
+            <div class="w-12 h-12 rounded-lg bg-[#E8531F] text-white flex items-center justify-center mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Our Mission</h3>
+            <p class="text-slate-200 text-base leading-relaxed">
+              Develop and deliver high-quality products on time; retain long-term relationships with the most demanding clients through innovative engineering strategies and transparent B2B partnership.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-12 bg-slate-100 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <h3 class="text-2xl font-bold text-[#0B1046]">Ready to Discuss Your Project Requirements?</h3>
+          <p class="text-slate-600 text-sm mt-1">Our engineering office in Bangalore is available for technical consultations.</p>
+        </div>
+        <a href="contact.html" class="btn-primary py-3 px-6 whitespace-nowrap">
+          Contact Our Team
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- UNIVERSAL ENQUIRY MODAL -->
+  <div id="enquiryModal" class="fixed inset-0 modal-overlay z-50 hidden items-center justify-center p-4 overflow-y-auto" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="modalSubjectTitle">
+    <div class="modal-panel bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden transform transition-all">
+      <div class="bg-[#0B1046] px-6 py-4 flex items-center justify-between flex-shrink-0">
+        <h3 id="modalSubjectTitle" class="text-lg font-bold text-white">Send Technical Enquiry</h3>
+        <button type="button" data-close-modal class="text-slate-300 hover:text-white text-2xl font-bold leading-none">&times;</button>
+      </div>
+
+      <form id="modalEnquiryForm" class="js-validate-form modal-scroll p-6 space-y-4" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" novalidate>
+        <input type="hidden" name="access_key" value="730db665-59a2-4dd8-a58b-2c02887033c5">
+        <input type="hidden" name="subject" value="New Technical Requirement — Bhairava Enterprises Website">
+        <input type="hidden" name="from_name" value="Bhairava Enterprises Website">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+        <input type="hidden" name="redirect" value="https://bhairavaent.com/thank-you">
+        <input type="hidden" id="modal_originating_section" name="originating_section" value="About Page Modal">
+
+        <div>
+          <label for="about-f1-name" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Full Name *</label>
+              <input id="about-f1-name" type="text" name="name" required placeholder="Your Name" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="name" autocapitalize="words">
+        </div>
+
+        <div>
+          <label for="about-f2-company" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Company Name *</label>
+              <input id="about-f2-company" type="text" name="company" required placeholder="Company / Enterprise Name" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="organization" autocapitalize="words">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="about-f3-phone" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Phone Number *</label>
+              <input id="about-f3-phone" type="tel" name="phone" required placeholder="10-digit mobile" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" inputmode="tel" autocomplete="tel" maxlength="18">
+          </div>
+          <div>
+            <label for="about-f4-email" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Email Address *</label>
+              <input id="about-f4-email" type="email" name="email" required placeholder="name@company.com" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false">
+          </div>
+        </div>
+
+        <div>
+          <label for="modal_requirement" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Requirement Specifications *</label>
+              <textarea id="modal_requirement" name="requirement" rows="3" required placeholder="Describe your requirement..." class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="off"></textarea>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button type="button" data-close-modal class="px-4 py-2.5 text-sm font-semibold text-slate-600 hover:text-slate-900">Cancel</button>
+          <button type="submit" class="btn-primary text-sm py-2.5 px-6">Submit Requirement</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0B1046] text-white pt-12 pb-8 border-t border-[#141B66]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+        
+        <div class="md:col-span-1">
+          <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="h-12 w-auto bg-white/95 p-1 rounded-lg mb-4 shadow-sm">
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Bhairava Enterprises — Engineering capabilities and processes structured to match the best standards of Quality, Reliability and Punctuality.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Quick Navigation</h4>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="hydraulics.html" class="hover:text-white transition-colors">Hydraulic Systems</a></li>
+            <li><a href="electrical.html" class="hover:text-white transition-colors">Electrical Service</a></li>
+            <li><a href="pipeline.html" class="hover:text-white transition-colors">Pipe Line Work</a></li>
+            <li><a href="trading.html" class="hover:text-white transition-colors">Trading Items</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Bangalore Office</h4>
+          <address class="not-italic text-sm text-slate-300 space-y-2">
+            <p>#95, 6th Cross, Sri Vinayakanagara, Thigalarpalya, Bangalore - 560058</p>
+            <p class="pt-2"><strong>Phone:</strong> <a href="tel:8553660577" class="hover:text-white">8553660577</a>, <a href="tel:7022191704" class="hover:text-white">7022191704</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@bhairavaent.com" class="hover:text-white">info@bhairavaent.com</a></p>
+          </address>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Direct Contact</h4>
+          <p class="text-xs text-slate-300 mb-4">Need technical assistance or project discussion?</p>
+          <a href="tel:8553660577" class="btn-primary w-full text-xs py-2.5">
+            Call Engineering Team
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p>&copy; 2026 Bhairava Enterprises. All Rights Reserved.</p>
+        <p>Quality, Reliability & Punctuality in Industrial Engineering</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1046">
+  <title>Hydraulic & Industrial Component Trading | Bhairava Enterprises Bangalore</title>
+  <meta name="description" content="Trade high-pressure hydraulic hoses, QRC couplings, DIN adapters, fasteners, fabrication consumables, and hydraulic oils (Hydraulic Oil 68) in Bangalore.">
+  <meta name="keywords" content="Hydraulic Components Trading Bangalore, Hydraulic Hoses, QRC Couplings, DC Valves, Hydraulic Oil 68, Fasteners, Seamless Pipes Fittings">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Bhairava Enterprises Industrial Trading",
+    "description": "Stockist and trader of hydraulic components, seamless tubes, fittings, industrial lubricants and fabrication fasteners in Bangalore.",
+    "telephone": ["+918553660577", "+917022191704"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#95, 6th Cross, Sri Vinayakanagara, Thigalarpalya",
+      "addressLocality": "Bangalore",
+      "postalCode": "560058"
+    }
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-700 flex flex-col min-h-screen">
+
+  <!-- STICKY HEADER -->
+  <header class="header-sticky fixed top-0 left-0 w-full z-40 bg-white/95 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <a href="index.html" class="logo-link flex items-center gap-3 group" aria-label="Bhairava Enterprises Home">
+        <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="site-logo transition-transform group-hover:scale-105">
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="hydraulics.html" class="nav-link">Hydraulics</a>
+        <a href="electrical.html" class="nav-link">Electrical</a>
+        <a href="pipeline.html" class="nav-link">Pipe Line</a>
+        <a href="trading.html" class="nav-link active">Trading Items</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:8553660577" class="hidden md:inline-flex btn-primary text-sm py-2.5 px-4" aria-label="Call Bhairava Enterprises">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Call: 8553660577
+        </a>
+
+        <a href="tel:8553660577" class="header-call-btn md:hidden p-2 text-[#E8531F] border border-[#E8531F]/30 rounded-lg hover:bg-[#E8531F]/10" aria-label="Tap to call">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </a>
+
+        <button id="mobileMenuBtn" type="button" class="md:hidden p-2 text-slate-700 hover:text-[#0B1046] focus:outline-none" aria-label="Open navigation menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div id="mobileNavOverlay" class="fixed inset-0 bg-black/60 z-40 hidden transition-opacity" aria-hidden="true"></div>
+  <div id="mobileNavDrawer" class="mobile-drawer fixed top-0 right-0 w-4/5 max-w-xs h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between p-6" aria-hidden="true" aria-label="Mobile navigation">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-200">
+        <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="site-logo">
+        <button id="mobileMenuCloseBtn" type="button" class="p-2 text-slate-500 hover:text-slate-900" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-4 mt-6">
+        <a href="index.html" class="nav-link text-lg">Home</a>
+        <a href="about.html" class="nav-link text-lg">About</a>
+        <a href="hydraulics.html" class="nav-link text-lg">Hydraulics</a>
+        <a href="electrical.html" class="nav-link text-lg">Electrical</a>
+        <a href="pipeline.html" class="nav-link text-lg">Pipe Line</a>
+        <a href="trading.html" class="nav-link text-lg active">Trading Items</a>
+        <a href="contact.html" class="nav-link text-lg">Contact</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-slate-200">
+      <a href="tel:8553660577" class="btn-primary w-full text-center py-3">
+        Call 8553660577
+      </a>
+    </div>
+  </div>
+
+  <main class="flex-grow pt-20">
+    
+    <!-- PAGE HEADER BANNER -->
+    <section class="bg-gradient-to-r from-[#0B1046] to-[#141B66] text-white py-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="breadcrumb flex items-center gap-2 text-xs text-[#E8531F] font-bold uppercase tracking-wider mb-2" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:underline text-slate-300">Home</a>
+          <span>/</span>
+          <span>Trading Items</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Industrial Materials & Trading Items</h1>
+        <p class="text-slate-300 text-base mt-2 max-w-3xl">
+          Authorized supply & trading of hydraulic components, seamless pipes, DIN adapters, high tensile fasteners, and industrial lubricants.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 4.1: FOUR CATEGORY CARDS WITH ITEM LISTS -->
+    <section class="py-16 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="badge-orange mb-2">Trading Inventory</span>
+          <h2 class="text-3xl font-extrabold text-[#0B1046]">Core Supply Categories</h2>
+          <p class="text-slate-600 text-sm mt-2">Quality certified spares and consumables ready for bulk supply in Bangalore.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Category 1 -->
+          <div class="card-industrial p-6 bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <h3 class="font-bold text-[#0B1046] text-xl mb-3">1. Hydraulic Components</h3>
+              <p class="text-xs text-slate-600 mb-4">Full range of hydraulic spares for industrial power packs and machinery:</p>
+              
+              <ul class="text-xs text-slate-700 space-y-2 font-medium">
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> High-Pressure Hoses (1ST/2ST/4SH)</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> QRC Couplings (Spring Return)</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> DC Solenoid & Manual Valves</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Custom Manifold Blocks</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Pressure Gauges & Switches</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Gear & Vane Pumps</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> High Micron Oil Filters</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200">
+              <button type="button" data-enquire-target data-subject="Hydraulic Components Trading" data-section="Trading Items" class="btn-outline w-full text-xs py-2">
+                Enquire Components
+              </button>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="card-industrial p-6 bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+              </div>
+              <h3 class="font-bold text-[#0B1046] text-xl mb-3">2. Pipes, Adapters & Fittings</h3>
+              <p class="text-xs text-slate-600 mb-4">Precision seamless tubing and leak-proof hydraulic line fittings:</p>
+              
+              <ul class="text-xs text-slate-700 space-y-2 font-medium">
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Seamless Steel Tubes (DIN 2391)</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> DIN 2353 Compression Adapters</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> BSP, NPT & Metric Fittings</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> SAE Split Flanges (3000/6000 PSI)</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Hose End Nipple Crimps</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200">
+              <button type="button" data-enquire-target data-subject="Hydraulic Pipes & Fittings" data-section="Trading Items" class="btn-outline w-full text-xs py-2">
+                Enquire Fittings
+              </button>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="card-industrial p-6 bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <h3 class="font-bold text-[#0B1046] text-xl mb-3">3. Fasteners & Consumables</h3>
+              <p class="text-xs text-slate-600 mb-4">Structural mounting hardware and heavy fabrication shop consumables:</p>
+              
+              <ul class="text-xs text-slate-700 space-y-2 font-medium">
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Grade 8.8 & 10.9 Bolts & Nuts</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> High Tensile Socket Head Caps</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Heavy Duty Welding Rods (E7018)</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> MIG Welding Wire & Shielding</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Cutting & Grinding Abrasives</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200">
+              <button type="button" data-enquire-target data-subject="Fasteners & Consumables Trading" data-section="Trading Items" class="btn-outline w-full text-xs py-2">
+                Enquire Fasteners
+              </button>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="card-industrial p-6 bg-slate-50 border border-slate-200 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-xl bg-[#0B1046] text-[#E8531F] flex items-center justify-center mb-4">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L5.594 15.15a2 2 0 00-1.022.547l-1.414 1.414a2 2 0 00.586 3.414l2.428.809a6 6 0 003.86-.517l.318-.158a6 6 0 013.86-.517l2.428.809a2 2 0 002.414-.586l1.414-1.414z"/></svg>
+              </div>
+              <h3 class="font-bold text-[#0B1046] text-xl mb-3">4. Industrial Lubricants</h3>
+              <p class="text-xs text-slate-600 mb-4">Certified anti-wear hydraulic oils and extreme pressure greases:</p>
+              
+              <ul class="text-xs text-slate-700 space-y-2 font-medium">
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Hydraulic Oil 68 (ISO VG 68)</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Hydraulic Oil VG 46 & VG 32</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> High Temp Lithium EP Grease</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> Gear Oils (80W-90, ISO VG 220)</li>
+                <li class="flex items-center gap-2"><span class="text-[#E8531F] font-bold">&bull;</span> 20L Buckets & 210L Drums</li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-slate-200">
+              <button type="button" data-enquire-target data-subject="Industrial Lubricants & Hydraulic Oil 68" data-section="Trading Items" class="btn-outline w-full text-xs py-2">
+                Enquire Lubricants
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4.2: SEARCHABLE & FILTERABLE INTERACTIVE PRODUCT GRID -->
+    <section class="py-16 bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <span class="badge-navy mb-1">Live Product Catalog</span>
+            <h2 class="text-3xl font-extrabold text-[#0B1046]">Searchable Product Database</h2>
+            <p id="resultsCount" role="status" aria-live="polite" class="text-xs text-slate-600 mt-1">Filter by category or search by item specifications</p>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="w-full md:w-80 relative">
+            <input id="catalogSearch" type="search" aria-label="Search the trading catalog" autocomplete="off" enterkeyhint="search" placeholder="Search hoses, oil 68, fittings..." class="w-full pl-10 pr-4 py-2.5 bg-white border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#E8531F] shadow-sm">
+            <svg class="w-5 h-5 text-slate-400 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="flex flex-wrap items-center gap-2 mb-8 border-b border-slate-200 pb-4" role="group" aria-label="Filter catalog by category">
+          <button type="button" data-category="all" class="catalog-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-[#0B1046] text-white">
+            All Items
+          </button>
+          <button type="button" data-category="hydraulic-components" class="catalog-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
+            Hydraulic Components
+          </button>
+          <button type="button" data-category="pipes-fittings" class="catalog-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
+            Pipes & Fittings
+          </button>
+          <button type="button" data-category="fasteners-consumables" class="catalog-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
+            Fasteners & Consumables
+          </button>
+          <button type="button" data-category="lubricants" class="catalog-filter-btn px-4 py-2 rounded-full text-xs font-bold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">
+            Lubricants
+          </button>
+        </div>
+
+        <!-- Interactive Grid: 4-col desktop / 2-col tablet / 1-col mobile -->
+        <div id="catalogGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Dynamically populated via catalog.js -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- UNIVERSAL ENQUIRY MODAL -->
+  <div id="enquiryModal" class="fixed inset-0 modal-overlay z-50 hidden items-center justify-center p-4 overflow-y-auto" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="modalSubjectTitle">
+    <div class="modal-panel bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden transform transition-all">
+      <div class="bg-[#0B1046] px-6 py-4 flex items-center justify-between flex-shrink-0">
+        <h3 id="modalSubjectTitle" class="text-lg font-bold text-white">Send Technical Enquiry</h3>
+        <button type="button" data-close-modal class="text-slate-300 hover:text-white text-2xl font-bold leading-none">&times;</button>
+      </div>
+
+      <form id="modalEnquiryForm" class="js-validate-form modal-scroll p-6 space-y-4" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" novalidate>
+        <input type="hidden" name="access_key" value="730db665-59a2-4dd8-a58b-2c02887033c5">
+        <input type="hidden" name="subject" value="New Technical Requirement — Bhairava Enterprises Website">
+        <input type="hidden" name="from_name" value="Bhairava Enterprises Website">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+        <input type="hidden" name="redirect" value="https://bhairavaent.com/thank-you">
+        <input type="hidden" id="modal_originating_section" name="originating_section" value="Trading Items Page">
+
+        <div>
+          <label for="trading-f1-name" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Full Name *</label>
+              <input id="trading-f1-name" type="text" name="name" required placeholder="Your Name" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="name" autocapitalize="words">
+        </div>
+
+        <div>
+          <label for="trading-f2-company" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Company Name *</label>
+              <input id="trading-f2-company" type="text" name="company" required placeholder="Company / Enterprise Name" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="organization" autocapitalize="words">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="trading-f3-phone" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Phone Number *</label>
+              <input id="trading-f3-phone" type="tel" name="phone" required placeholder="10-digit mobile" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" inputmode="tel" autocomplete="tel" maxlength="18">
+          </div>
+          <div>
+            <label for="trading-f4-email" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Email Address *</label>
+              <input id="trading-f4-email" type="email" name="email" required placeholder="name@company.com" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false">
+          </div>
+        </div>
+
+        <div>
+          <label for="modal_requirement" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Requirement Specifications *</label>
+              <textarea id="modal_requirement" name="requirement" rows="3" required placeholder="Describe your item quantity or technical specs..." class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="off"></textarea>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button type="button" data-close-modal class="px-4 py-2.5 text-sm font-semibold text-slate-600 hover:text-slate-900">Cancel</button>
+          <button type="submit" class="btn-primary text-sm py-2.5 px-6">Submit Requirement</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0B1046] text-white pt-12 pb-8 border-t border-[#141B66]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+        
+        <div class="md:col-span-1">
+          <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="h-12 w-auto bg-white/95 p-1 rounded-lg mb-4 shadow-sm">
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Bhairava Enterprises — Trading of Hydraulic Components, Seamless Tubes, Fasteners, and Hydraulic Oil 68.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Quick Navigation</h4>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="hydraulics.html" class="hover:text-white transition-colors">Hydraulic Systems</a></li>
+            <li><a href="electrical.html" class="hover:text-white transition-colors">Electrical Service</a></li>
+            <li><a href="pipeline.html" class="hover:text-white transition-colors">Pipe Line Work</a></li>
+            <li><a href="trading.html" class="hover:text-white transition-colors">Trading Items</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Bangalore Office</h4>
+          <address class="not-italic text-sm text-slate-300 space-y-2">
+            <p>#95, 6th Cross, Sri Vinayakanagara, Thigalarpalya, Bangalore - 560058</p>
+            <p class="pt-2"><strong>Phone:</strong> <a href="tel:8553660577" class="hover:text-white">8553660577</a>, <a href="tel:7022191704" class="hover:text-white">7022191704</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@bhairavaent.com" class="hover:text-white">info@bhairavaent.com</a></p>
+          </address>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Direct Contact</h4>
+          <p class="text-xs text-slate-300 mb-4">Need bulk pricing for hoses, fittings or hydraulic oil?</p>
+          <a href="tel:8553660577" class="btn-primary w-full text-xs py-2.5">
+            Call Sales Desk
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p>&copy; 2026 Bhairava Enterprises. All Rights Reserved.</p>
+        <p>Hydraulic Spares | DIN Tubes | Fasteners | Hydraulic Oil 68</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/catalog.js"></script>
+</body>
+</html>

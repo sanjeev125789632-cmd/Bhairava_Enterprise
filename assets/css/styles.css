@@ -1,0 +1,488 @@
+/* Custom CSS & Industrial Design System for Bhairava Enterprises */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+
+:root {
+  --color-navy-main: #0B1046;
+  --color-navy-dark: #070B30;
+  --color-navy-light: #1A227E;
+  --color-orange-brand: #E8531F;
+  --color-orange-hover: #CF4313;
+  --color-orange-subtle: rgba(232, 83, 31, 0.08);
+  --color-slate-bg: #F8FAFC;
+  --color-slate-border: #E2E8F0;
+  --color-text-main: #334155;
+  --color-text-heading: #0B1046;
+  --color-text-muted: #64748B;
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  /* Offset in-page anchor jumps so targets clear the fixed 5rem header */
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+  /* Stops iOS Safari inflating body copy in landscape */
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-main);
+  background-color: #FFFFFF;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(232, 83, 31, 0.15);
+}
+
+/* Scroll lock applied while the drawer or modal is open */
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Images never break out of their column on narrow screens */
+img, svg, iframe, video {
+  max-width: 100%;
+}
+
+/* Long unbroken specs (part numbers, URLs) must wrap rather than overflow */
+p, li, h1, h2, h3, h4, h5, h6, address, td, th {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text-heading);
+}
+
+/* Focus state accessibility */
+*:focus-visible {
+  outline: 3px solid var(--color-orange-brand);
+  outline-offset: 2px;
+}
+
+/* Glassmorphism & Header styling */
+.header-sticky {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-scrolled {
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px -2px rgba(11, 16, 70, 0.08);
+}
+
+/* Button & CTA styles.
+   min-height keeps every CTA at the 44px minimum touch target even when a
+   page shrinks it with utilities like `text-xs py-2`. */
+.btn-primary,
+.btn-secondary,
+.btn-outline {
+  min-height: 2.75rem;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-orange-brand);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(232, 83, 31, 0.25);
+}
+
+.btn-secondary {
+  background-color: var(--color-navy-main);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline {
+  border: 2px solid var(--color-navy-main);
+  color: var(--color-navy-main);
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.375rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effects are gated to real pointers — on touch devices a tapped
+   element keeps its :hover state until the next tap elsewhere. */
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover {
+    background-color: var(--color-orange-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(232, 83, 31, 0.35);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-navy-light);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline:hover {
+    background-color: var(--color-navy-main);
+    color: #FFFFFF;
+  }
+}
+
+/* Touch devices get the colour change without the lift */
+@media (hover: none) {
+  .btn-primary:active {
+    background-color: var(--color-orange-hover);
+  }
+
+  .btn-secondary:active {
+    background-color: var(--color-navy-light);
+  }
+
+  .btn-outline:active {
+    background-color: var(--color-navy-main);
+    color: #FFFFFF;
+  }
+}
+
+/* Label:Value Spec Grid styling */
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.5rem;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.5rem;
+  padding: 0.875rem;
+}
+
+.spec-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 0.75rem;
+  /* Long spec strings wrap onto their own line instead of squeezing the
+     label to one character per row on narrow phones. */
+  flex-wrap: wrap;
+  padding: 0.375rem 0.5rem;
+  border-bottom: 1px dashed #CBD5E1;
+  font-size: 0.875rem;
+}
+
+.spec-item:last-child {
+  border-bottom: none;
+}
+
+.spec-label {
+  font-weight: 600;
+  color: var(--color-navy-main);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.spec-value {
+  font-weight: 500;
+  color: #1E293B;
+  text-align: right;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 400px) {
+  .spec-item {
+    /* Below ~400px the two columns no longer fit side by side */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .spec-value {
+    text-align: left;
+  }
+}
+
+/* Technical Card Hover Effects */
+.card-industrial {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-industrial:hover {
+    border-color: rgba(232, 83, 31, 0.4);
+    box-shadow: 0 12px 24px -4px rgba(11, 16, 70, 0.1);
+    transform: translateY(-3px);
+  }
+}
+
+/* Modal styling */
+.modal-overlay {
+  background-color: rgba(11, 16, 70, 0.75);
+  backdrop-filter: blur(6px);
+}
+
+/* The dialog is capped to the visible viewport and scrolls internally, so the
+   submit button stays reachable on short screens and in landscape. dvh
+   accounts for the collapsing mobile browser chrome; vh is the fallback. */
+.modal-panel {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  max-height: 90dvh;
+}
+
+.modal-scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Mobile drawer scrolls when the nav list is taller than a short viewport */
+.mobile-drawer {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Closed drawer must not be reachable by keyboard or screen readers, and must
+   not create a horizontal scroll area while parked off-screen. The visibility
+   flip is delayed by the slide duration so the close animation still plays. */
+.mobile-drawer[aria-hidden="true"] {
+  visibility: hidden;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear 300ms;
+}
+
+/* Navigation active indicator */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  color: #334155;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--color-orange-brand);
+}
+
+/* Drawer links get a full-width 44px touch target. The desktop underline
+   would stretch the whole row and read as a divider, so the active item is
+   marked with a left accent bar instead. */
+.mobile-drawer .nav-link {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid transparent;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.mobile-drawer .nav-link.active {
+  border-left-color: var(--color-orange-brand);
+  background-color: var(--color-orange-subtle);
+}
+
+.mobile-drawer .nav-link.active::after {
+  content: none;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--color-orange-brand);
+  border-radius: 2px;
+}
+
+/* Badge styling.
+   inline-block is required: badges are <span>s that every page spaces with
+   `mb-1`/`mb-2`/`mb-3`, and vertical margins are ignored on inline boxes. */
+.badge-orange,
+.badge-navy {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.badge-orange {
+  background-color: rgba(232, 83, 31, 0.1);
+  color: var(--color-orange-brand);
+  border: 1px solid rgba(232, 83, 31, 0.2);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-navy {
+  background-color: rgba(11, 16, 70, 0.08);
+  color: var(--color-navy-main);
+  border: 1px solid rgba(11, 16, 70, 0.15);
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Brand logo.
+   The SVG is 480x90, so a bare `h-12` renders it 256px wide and blows out the
+   header row on a 360px phone. Cap the width and scale the height by breakpoint. */
+.site-logo {
+  height: 2.75rem;
+  width: auto;
+  max-width: 14rem;
+  object-fit: contain;
+}
+
+@media (min-width: 400px) {
+  .site-logo {
+    height: 3.25rem;
+    max-width: 15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-logo {
+    height: 3.75rem;
+    max-width: 18rem;
+  }
+}
+
+/* Toast notifications.
+   Full-bleed with equal insets on phones; a right-anchored card from `sm` up.
+   The old `right-5 w-full max-w-md` pushed the toast 20px off the left edge
+   on any viewport under 448px. */
+#toastContainer {
+  position: fixed;
+  z-index: 60;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  pointer-events: none;
+}
+
+#toastContainer > * {
+  pointer-events: auto;
+}
+
+@media (min-width: 640px) {
+  #toastContainer {
+    left: auto;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    max-width: 28rem;
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Touch target sizing (WCAG 2.5.8).
+   Small inline text links are fine to click with a mouse but are only ~16px
+   tall, well under the ~44px a fingertip needs. These rules grow the hit area
+   on coarse pointers only, so the desktop layout is untouched.
+   --------------------------------------------------------------------------- */
+.link-tap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (pointer: coarse) {
+  .link-tap,
+  .catalog-filter-btn,
+  .logo-link,
+  .header-call-btn {
+    min-height: 2.75rem;
+  }
+
+  .logo-link,
+  .header-call-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-call-btn {
+    min-width: 2.75rem;
+  }
+
+  /* Breadcrumb sits alone on its row, so a taller link costs no layout */
+  .breadcrumb a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+  }
+
+  /* Footer navigation and the tap-to-call / mailto links are the primary
+     conversion path on a phone — they get full-height rows. */
+  footer nav a,
+  footer ul li a,
+  footer address a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+  }
+
+  footer address a {
+    /* Keeps the comma-separated phone pair on its own touchable row */
+    display: flex;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-navy-main);
+}

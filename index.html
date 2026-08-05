@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0B1046">
+  <title>Bhairava Enterprises | Hydraulic Systems, Electrical & Pipe Line Services Bangalore</title>
+  <meta name="description" content="Bhairava Enterprises is a leading industrial firm in Bangalore providing hydraulic power packs, hydraulic component trading, electrical control panels, and industrial pipeline installations.">
+  <meta name="keywords" content="Bhairava Enterprises, Hydraulic Power Pack Bangalore, Electrical Control Panels, Hydraulic Hoses, Pipe Line Work, Tipper Power Pack, Hydraulic Oil 68, Industrial Engineering Bangalore">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "LocalBusiness"],
+    "name": "Bhairava Enterprises",
+    "description": "Industrial firm in Bangalore providing industrial materials, hydraulic components trading & service, electrical service and hydraulic design.",
+    "url": "https://bhairavaent.com",
+    "logo": "assets/images/logo.png",
+    "telephone": ["+918553660577", "+917022191704"],
+    "email": "info@bhairavaent.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "#95, 6th Cross, Sri Vinayakanagara, Thigalarpalya",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560058",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 13.0089,
+      "longitude": 77.4984
+    },
+    "openingHours": "Mo-Sa 09:00-19:00",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-700 flex flex-col min-h-screen">
+
+  <!-- STICKY HEADER -->
+  <header class="header-sticky fixed top-0 left-0 w-full z-40 bg-white/95 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Left -->
+      <a href="index.html" class="logo-link flex items-center gap-3 group" aria-label="Bhairava Enterprises Home">
+        <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="site-logo transition-transform group-hover:scale-105">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-7">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="hydraulics.html" class="nav-link">Hydraulics</a>
+        <a href="electrical.html" class="nav-link">Electrical</a>
+        <a href="pipeline.html" class="nav-link">Pipe Line</a>
+        <a href="trading.html" class="nav-link">Trading Items</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- CTA Button Desktop & Phone Call Mobile -->
+      <div class="flex items-center gap-3">
+        <a href="tel:8553660577" class="hidden md:inline-flex btn-primary text-sm py-2.5 px-4" aria-label="Call Bhairava Enterprises">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Call: 8553660577
+        </a>
+
+        <!-- Mobile Phone Quick Button -->
+        <a href="tel:8553660577" class="header-call-btn md:hidden p-2 text-[#E8531F] border border-[#E8531F]/30 rounded-lg hover:bg-[#E8531F]/10" aria-label="Tap to call Bhairava Enterprises">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </a>
+
+        <!-- Mobile Drawer Toggle Hamburger -->
+        <button id="mobileMenuBtn" type="button" class="md:hidden p-2 text-slate-700 hover:text-[#0B1046] focus:outline-none" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobileNavOverlay" class="fixed inset-0 bg-black/60 z-40 hidden transition-opacity" aria-hidden="true"></div>
+  <div id="mobileNavDrawer" class="mobile-drawer fixed top-0 right-0 w-4/5 max-w-xs h-full bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between p-6" aria-hidden="true" aria-label="Mobile navigation">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-200">
+        <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="site-logo">
+        <button id="mobileMenuCloseBtn" type="button" class="p-2 text-slate-500 hover:text-slate-900" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-4 mt-6">
+        <a href="index.html" class="nav-link text-lg active">Home</a>
+        <a href="about.html" class="nav-link text-lg">About</a>
+        <a href="hydraulics.html" class="nav-link text-lg">Hydraulics</a>
+        <a href="electrical.html" class="nav-link text-lg">Electrical</a>
+        <a href="pipeline.html" class="nav-link text-lg">Pipe Line</a>
+        <a href="trading.html" class="nav-link text-lg">Trading Items</a>
+        <a href="contact.html" class="nav-link text-lg">Contact</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-slate-200">
+      <a href="tel:8553660577" class="btn-primary w-full text-center py-3">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        Call 8553660577
+      </a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow pt-20">
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-br from-[#0B1046] via-[#070B30] to-[#141B66] text-white py-20 lg:py-28 overflow-hidden">
+      <!-- Decorative Backdrop Graphic -->
+      <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#E8531F_1px,transparent_1px)] [background-size:16px_16px]"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#E8531F]/20 border border-[#E8531F]/40 text-[#E8531F] text-xs font-bold uppercase tracking-wider mb-6">
+            <span class="w-2 h-2 rounded-full bg-[#E8531F] animate-pulse"></span>
+            Industrial Engineering Excellence — Bangalore
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+            BHAIRAVA ENTERPRISES
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-200 font-normal leading-relaxed mb-8 border-l-4 border-[#E8531F] pl-4">
+            Engineering capabilities and processes structured to match the best standards of Quality, Reliability and Punctuality.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="trading.html" class="btn-primary py-3.5 px-7 text-base">
+              Explore Products & Trading
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="contact.html" class="btn-outline text-white border-white hover:bg-white hover:text-[#0B1046] py-3.5 px-7 text-base">
+              Request Technical Quote
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 SERVICE PREVIEW TILES LINKING TO VERTICAL SECTIONS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+          
+          <!-- Tile 1: Hydraulics -->
+          <a href="hydraulics.html" class="group bg-white/10 backdrop-blur-md border border-white/15 p-6 rounded-xl hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 shadow-lg">
+            <div class="w-12 h-12 rounded-lg bg-[#E8531F] text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#E8531F] transition-colors">Hydraulic Systems</h3>
+            <p class="text-sm text-slate-300">AC/DC power packs, tipper packs, cylinder repair, and oil filtration services.</p>
+            <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#E8531F] mt-4">
+              View Hydraulics Specs &rarr;
+            </span>
+          </a>
+
+          <!-- Tile 2: Electrical -->
+          <a href="electrical.html" class="group bg-white/10 backdrop-blur-md border border-white/15 p-6 rounded-xl hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 shadow-lg">
+            <div class="w-12 h-12 rounded-lg bg-[#E8531F] text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#E8531F] transition-colors">Electrical Service</h3>
+            <p class="text-sm text-slate-300">PLC, HMI, SCADA control panels, VFDs, servo motors, and maintenance work.</p>
+            <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#E8531F] mt-4">
+              Explore Electrical &rarr;
+            </span>
+          </a>
+
+          <!-- Tile 3: Pipe Line Work -->
+          <a href="pipeline.html" class="group bg-white/10 backdrop-blur-md border border-white/15 p-6 rounded-xl hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 shadow-lg">
+            <div class="w-12 h-12 rounded-lg bg-[#E8531F] text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#E8531F] transition-colors">Pipe Line Work</h3>
+            <p class="text-sm text-slate-300">On-site high pressure hydraulic piping, chiller lines, and process water loops.</p>
+            <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#E8531F] mt-4">
+              See Pipe Line Projects &rarr;
+            </span>
+          </a>
+
+          <!-- Tile 4: Trading Items -->
+          <a href="trading.html" class="group bg-white/10 backdrop-blur-md border border-white/15 p-6 rounded-xl hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 shadow-lg">
+            <div class="w-12 h-12 rounded-lg bg-[#E8531F] text-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-[#E8531F] transition-colors">Trading Items</h3>
+            <p class="text-sm text-slate-300">Hoses, DIN fittings, QRC couplings, high tensile fasteners, and hydraulic oils.</p>
+            <span class="inline-flex items-center gap-1 text-xs font-semibold text-[#E8531F] mt-4">
+              Browse Live Catalog &rarr;
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXECUTIVE OVERVIEW & STRENGTHS SECTION -->
+    <section class="py-16 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="badge-navy mb-3">About Bhairava Enterprises</span>
+            <h2 class="text-3xl font-extrabold text-[#0B1046] sm:text-4xl mb-4">
+              Precision Engineering & Quality Execution
+            </h2>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+              Based in Bangalore, Bhairava Enterprises is an established industrial engineering partner providing specialized hydraulic power packs, electrical panel automation, pipeline fabrication, and component trading to manufacturing plants across South India.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-3">
+                <div class="p-2 rounded-md bg-[#E8531F]/10 text-[#E8531F] mt-1">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-[#0B1046]">Effective Management & Survey</h4>
+                  <p class="text-sm text-slate-600">Thorough on-site engineering surveys prior to execution, ensuring exact fluid and electrical parameters.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="p-2 rounded-md bg-[#E8531F]/10 text-[#E8531F] mt-1">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                </div>
+                <div>
+                  <h4 class="font-bold text-[#0B1046]">Testing & Commissioning Assurance</h4>
+                  <p class="text-sm text-slate-600">Every power pack, control panel, and pipeline project undergoes rigorous hydrostatic and operational testing before hand-off.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="about.html" class="btn-secondary">
+              Read More About Our Strengths
+            </a>
+          </div>
+
+          <!-- Vision & Mission Preview Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="p-6 bg-white rounded-xl border border-slate-200 shadow-md">
+              <div class="w-10 h-10 rounded-full bg-[#0B1046] text-white flex items-center justify-center mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-[#0B1046] mb-2">Our Vision</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Exceed customer expectations with superior quality and timely delivery across all hydraulic, electrical, and piping projects.
+              </p>
+            </div>
+
+            <div class="p-6 bg-white rounded-xl border border-slate-200 shadow-md">
+              <div class="w-10 h-10 rounded-full bg-[#E8531F] text-white flex items-center justify-center mb-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <h3 class="text-xl font-bold text-[#0B1046] mb-2">Our Mission</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Develop and deliver high-quality products on time; retain long-term relationships with the most demanding clients through innovative strategies.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUICK ENQUIRY SECTION ON HOME PAGE -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-[#0B1046] rounded-2xl p-8 lg:p-12 text-white shadow-2xl relative overflow-hidden">
+          <div class="max-w-2xl relative z-10">
+            <span class="badge-orange mb-3">Direct Engineering Support</span>
+            <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-4">
+              Need Custom Hydraulic Power Packs or Electrical Panel Service?
+            </h2>
+            <p class="text-slate-300 mb-8">
+              Submit your technical specifications or project requirement. Our engineering team in Bangalore will respond within 24 hours.
+            </p>
+          </div>
+
+          <form class="js-validate-form relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/15" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" novalidate>
+            <input type="hidden" name="access_key" value="730db665-59a2-4dd8-a58b-2c02887033c5">
+            <input type="hidden" name="subject" value="New Technical Requirement — Bhairava Enterprises Website">
+            <input type="hidden" name="from_name" value="Bhairava Enterprises Website">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+            <input type="hidden" name="redirect" value="https://bhairavaent.com/thank-you">
+            <input type="hidden" name="originating_section" value="Home Quick Enquiry Strip">
+            
+            <div>
+              <label for="index-f1-name" class="block text-xs font-semibold text-slate-200 uppercase tracking-wider mb-1">Your Name *</label>
+              <input id="index-f1-name" type="text" name="name" required placeholder="e.g. Rajesh Kumar" class="w-full px-3 py-2.5 bg-white text-slate-800 rounded-md border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E8531F] text-sm" autocomplete="name" autocapitalize="words">
+            </div>
+
+            <div>
+              <label for="index-f2-phone" class="block text-xs font-semibold text-slate-200 uppercase tracking-wider mb-1">Phone Number *</label>
+              <input id="index-f2-phone" type="tel" name="phone" required placeholder="e.g. 9876543210" class="w-full px-3 py-2.5 bg-white text-slate-800 rounded-md border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E8531F] text-sm" inputmode="tel" autocomplete="tel" maxlength="18">
+            </div>
+
+            <div>
+              <label for="index-f3-requirement" class="block text-xs font-semibold text-slate-200 uppercase tracking-wider mb-1">Company / Requirement *</label>
+              <input id="index-f3-requirement" type="text" name="requirement" required placeholder="e.g. 10HP Power Pack / Panel Service" class="w-full px-3 py-2.5 bg-white text-slate-800 rounded-md border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#E8531F] text-sm" autocomplete="off">
+            </div>
+
+            <div class="flex items-end">
+              <button type="submit" class="btn-primary w-full py-2.5 text-sm">
+                Submit Enquiry
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- UNIVERSAL ENQUIRY MODAL POPUP -->
+  <div id="enquiryModal" class="fixed inset-0 modal-overlay z-50 hidden items-center justify-center p-4 overflow-y-auto" aria-modal="true" role="dialog" aria-hidden="true" aria-labelledby="modalSubjectTitle">
+    <div class="modal-panel bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden transform transition-all">
+      <div class="bg-[#0B1046] px-6 py-4 flex items-center justify-between flex-shrink-0">
+        <h3 id="modalSubjectTitle" class="text-lg font-bold text-white">Send Technical Enquiry</h3>
+        <button type="button" data-close-modal class="text-slate-300 hover:text-white text-2xl font-bold leading-none">&times;</button>
+      </div>
+
+      <form id="modalEnquiryForm" class="js-validate-form modal-scroll p-6 space-y-4" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" novalidate>
+        <input type="hidden" name="access_key" value="730db665-59a2-4dd8-a58b-2c02887033c5">
+        <input type="hidden" name="subject" value="New Technical Requirement — Bhairava Enterprises Website">
+        <input type="hidden" name="from_name" value="Bhairava Enterprises Website">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+        <input type="hidden" name="redirect" value="https://bhairavaent.com/thank-you">
+        <input type="hidden" id="modal_originating_section" name="originating_section" value="Website Modal">
+
+        <div>
+          <label for="index-f4-name" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Full Name *</label>
+              <input id="index-f4-name" type="text" name="name" required placeholder="Your Name" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="name" autocapitalize="words">
+        </div>
+
+        <div>
+          <label for="index-f5-company" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Company Name *</label>
+              <input id="index-f5-company" type="text" name="company" required placeholder="Company / Enterprise Name" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="organization" autocapitalize="words">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label for="index-f6-phone" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Phone Number *</label>
+              <input id="index-f6-phone" type="tel" name="phone" required placeholder="10-digit mobile" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" inputmode="tel" autocomplete="tel" maxlength="18">
+          </div>
+          <div>
+            <label for="index-f7-email" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Email Address *</label>
+              <input id="index-f7-email" type="email" name="email" required placeholder="name@company.com" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false">
+          </div>
+        </div>
+
+        <div>
+          <label for="modal_requirement" class="block text-xs font-bold uppercase tracking-wider text-[#0B1046] mb-1">Requirement Specifications *</label>
+              <textarea id="modal_requirement" name="requirement" rows="3" required placeholder="Describe your technical specifications..." class="w-full px-3.5 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-[#E8531F] focus:outline-none" autocomplete="off"></textarea>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 pt-2">
+          <button type="button" data-close-modal class="px-4 py-2.5 text-sm font-semibold text-slate-600 hover:text-slate-900">Cancel</button>
+          <button type="submit" class="btn-primary text-sm py-2.5 px-6">Submit Technical Requirement</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0B1046] text-white pt-12 pb-8 border-t border-[#141B66]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+        
+        <!-- Col 1: Brand -->
+        <div class="md:col-span-1">
+          <img src="assets/images/logo.png" alt="Bhairava Enterprises Logo" class="h-12 w-auto bg-white/95 p-1 rounded-lg mb-4 shadow-sm">
+          <p class="text-xs text-slate-300 leading-relaxed mb-4">
+            Bhairava Enterprises — Engineering capabilities and processes structured to match the best standards of Quality, Reliability and Punctuality.
+          </p>
+        </div>
+
+        <!-- Col 2: Condensed Nav -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Quick Navigation</h4>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="hydraulics.html" class="hover:text-white transition-colors">Hydraulic Systems</a></li>
+            <li><a href="electrical.html" class="hover:text-white transition-colors">Electrical Service</a></li>
+            <li><a href="pipeline.html" class="hover:text-white transition-colors">Pipe Line Work</a></li>
+            <li><a href="trading.html" class="hover:text-white transition-colors">Trading Items</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Address & Phone -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Bangalore Office</h4>
+          <address class="not-italic text-sm text-slate-300 space-y-2">
+            <p>#95, 6th Cross, Sri Vinayakanagara, Thigalarpalya, Bangalore - 560058</p>
+            <p class="pt-2"><strong>Phone:</strong> <a href="tel:8553660577" class="hover:text-white">8553660577</a>, <a href="tel:7022191704" class="hover:text-white">7022191704</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@bhairavaent.com" class="hover:text-white">info@bhairavaent.com</a></p>
+          </address>
+        </div>
+
+        <!-- Col 4: Quick Action -->
+        <div>
+          <h4 class="text-sm font-bold uppercase tracking-wider text-[#E8531F] mb-4">Direct Contact</h4>
+          <p class="text-xs text-slate-300 mb-4">Have an urgent plant service or power pack requirement? Call us directly.</p>
+          <a href="tel:8553660577" class="btn-primary w-full text-xs py-2.5">
+            Call Engineering Team
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p>&copy; 2026 Bhairava Enterprises. All Rights Reserved.</p>
+        <p>Industrial Materials | Hydraulic Components Trading & Service | Electrical Service | Hydraulic Design</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

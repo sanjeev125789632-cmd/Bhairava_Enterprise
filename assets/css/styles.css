@@ -136,6 +136,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.2s ease-in-out;
 }
 
+.btn-outline-white,
+.btn-outline-light,
+.btn-outline.text-white {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
 /* Hover effects are gated to real pointers — on touch devices a tapped
    element keeps its :hover state until the next tap elsewhere. */
 @media (hover: hover) and (pointer: fine) {
@@ -154,6 +161,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-navy-main);
     color: #FFFFFF;
   }
+
+  .btn-outline-white:hover,
+  .btn-outline-light:hover,
+  .btn-outline.text-white:hover {
+    background-color: #FFFFFF;
+    color: var(--color-navy-main);
+    border-color: #FFFFFF;
+  }
 }
 
 /* Touch devices get the colour change without the lift */
@@ -169,6 +184,14 @@ h1, h2, h3, h4, h5, h6 {
   .btn-outline:active {
     background-color: var(--color-navy-main);
     color: #FFFFFF;
+  }
+
+  .btn-outline-white:active,
+  .btn-outline-light:active,
+  .btn-outline.text-white:active {
+    background-color: #FFFFFF;
+    color: var(--color-navy-main);
+    border-color: #FFFFFF;
   }
 }
 

@@ -515,6 +515,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Custom scrollbar */
+.page-gallery figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }

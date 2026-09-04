@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Single-phase hydraulic power pack category illustration</title><desc id="desc">A neutral diagram combining a motor, reservoir and hydraulic line.</desc>
+  <rect width="800" height="520" fill="#eef2f7"/><rect x="172" y="300" width="456" height="120" rx="16" fill="#0b1046"/><circle cx="400" cy="210" r="92" fill="#fff" stroke="#0b1046" stroke-width="14"/><path d="M370 150h35c38 0 38 60 0 60h-10c-38 0-38 60 0 60h35" fill="none" stroke="#e8531f" stroke-width="14" stroke-linecap="round"/><path d="M492 210h80v90M308 210h-80v90" fill="none" stroke="#0b1046" stroke-width="14"/><circle cx="572" cy="300" r="16" fill="#e8531f"/>
+</svg>

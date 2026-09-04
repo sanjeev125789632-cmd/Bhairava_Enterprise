@@ -1,7 +1,4 @@
-/**
- * Main JavaScript File for Bhairava Enterprises
- * Handles sticky navbar, mobile drawer, enquiry modal, client-side validation & toasts
- */
+/* Site interactions: navigation, modal, validation and status messages. */
 
 document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
@@ -30,6 +27,24 @@ function unlockScroll() {
   if (scrollLockCount === 0) {
     document.documentElement.classList.remove('no-scroll');
     document.body.classList.remove('no-scroll');
+  }
+}
+
+function keepFocusInside(event, container) {
+  if (event.key !== 'Tab') return;
+  const items = [...container.querySelectorAll(
+    'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+  )].filter(item => !item.hidden && item.offsetParent !== null);
+  if (!items.length) return;
+
+  const first = items[0];
+  const last = items[items.length - 1];
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
   }
 }
 
@@ -98,6 +113,7 @@ function initMobileMenu() {
       closeDrawer();
       toggleBtn.focus();
     }
+    if (isOpen) keepFocusInside(e, drawer);
   });
 
   // Close menu on link click
@@ -152,6 +168,7 @@ function initEnquiryModal() {
     if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
       closeEnquiryModal();
     }
+    if (!modal.classList.contains('hidden')) keepFocusInside(e, modal);
   });
 }
 

@@ -1,11 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.bhairavaent.com/</loc><lastmod>2026-09-04</lastmod><priority>1.0</priority></url>
-  <url><loc>https://www.bhairavaent.com/about.html</loc><lastmod>2026-09-04</lastmod><priority>0.7</priority></url>
-  <url><loc>https://www.bhairavaent.com/hydraulics.html</loc><lastmod>2026-09-04</lastmod><priority>0.9</priority></url>
-  <url><loc>https://www.bhairavaent.com/electrical.html</loc><lastmod>2026-09-04</lastmod><priority>0.9</priority></url>
-  <url><loc>https://www.bhairavaent.com/pipeline.html</loc><lastmod>2026-09-04</lastmod><priority>0.9</priority></url>
-  <url><loc>https://www.bhairavaent.com/trading.html</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.bhairavaent.com/gallery.html</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.bhairavaent.com/contact.html</loc><lastmod>2026-09-04</lastmod><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.bhairavaent.com/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.bhairavaent.com/hydraulics.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bhairavaent.com/electrical.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bhairavaent.com/pipeline.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bhairavaent.com/gallery.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/hydraulic-power-pack-with-oil-cooler.jpg</image:loc>
+      <image:title>Hydraulic power pack with oil cooler, valve manifold and pressure gauge</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/compact-vertical-hydraulic-power-pack.jpg</image:loc>
+      <image:title>Compact vertical hydraulic power pack with motor, manifold and pressure gauge</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/compact-hydraulic-power-pack-production-batch.jpg</image:loc>
+      <image:title>Production batch of four compact hydraulic power pack assemblies</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/hydraulic-clamping-power-pack-with-accumulators.jpg</image:loc>
+      <image:title>Frame-mounted hydraulic clamping power pack with accumulators and pressure gauge</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/mobile-hydraulic-oil-filtration-units.jpg</image:loc>
+      <image:title>Production batch of mobile hydraulic oil filtration units on wheeled frames</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/three-accumulator-hydraulic-power-pack.jpg</image:loc>
+      <image:title>Compact hydraulic power pack with three accumulators and solenoid valves</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/twin-hydraulic-press-system-with-power-pack.jpg</image:loc>
+      <image:title>Twin hydraulic press workstations connected to a central hydraulic power pack</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/three-station-hydraulic-power-pack-manifold.jpg</image:loc>
+      <image:title>Three-station hydraulic valve manifold with accumulators and pressure switches</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/multi-circuit-hydraulic-power-pack.jpg</image:loc>
+      <image:title>Multi-circuit hydraulic power pack with three pressure gauges and valve manifold</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/intermediate-hydraulic-system-training-unit.jpg</image:loc>
+      <image:title>Intermediate hydraulic system training unit with circuit diagram and gauges</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/industrial-hydraulic-power-pack-with-oil-cooler.jpg</image:loc>
+      <image:title>Industrial hydraulic power pack installed beside machinery with oil cooler and hoses</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/vertical-motor-hydraulic-power-pack.jpg</image:loc>
+      <image:title>Vertical-motor hydraulic power pack with reservoir, manifold and pressure gauge</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/compact-single-valve-hydraulic-power-pack.jpg</image:loc>
+      <image:title>Compact single-valve hydraulic power pack with vertical electric motor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/hydraulic-power-pack-with-electrical-control-panel.jpg</image:loc>
+      <image:title>Hydraulic power pack with integrated electrical control panel and vertical motor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/vertical-motor-hydraulic-power-pack-blue-tank.jpg</image:loc>
+      <image:title>Blue-tank vertical-motor hydraulic power pack with oil level indicator</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/dual-pressure-clamping-hydraulic-power-pack.jpg</image:loc>
+      <image:title>Dual-pressure hydraulic clamping power pack with two gauges and valve manifold</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/four-valve-hydraulic-power-pack-with-oil-cooler.jpg</image:loc>
+      <image:title>Four-valve hydraulic power pack with multiple gauges and oil cooler</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/four-circuit-hydraulic-power-pack-with-gauge-panel.jpg</image:loc>
+      <image:title>Four-circuit hydraulic power pack with a dedicated pressure gauge panel</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.bhairavaent.com/compact-hydraulic-power-pack-with-accumulator.jpg</image:loc>
+      <image:title>Compact hydraulic power pack with accumulator, valves and vertical electric motor</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.bhairavaent.com/trading.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bhairavaent.com/contact.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bhairavaent.com/about.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
